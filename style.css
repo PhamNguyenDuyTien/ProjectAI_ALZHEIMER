@@ -1,0 +1,345 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* ============= COMMON =============== */
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+h1, h2{
+    text-transform: uppercase;
+}
+
+input{
+    height: 35px;
+    padding: 5px 5px;
+    border-radius: 10px;
+    border: none;
+}
+
+button{
+    margin: 0 60px ;
+    padding: 10px;
+    background: #000;
+    color: #fff;
+}
+
+button:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+table,th,tr,td{
+    padding: 10px;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    font-size: 16px;
+    text-decoration: none;
+    color: #000;
+    padding: 10px;
+    display: block;
+}
+
+a:hover{
+    background: #ccc;
+    color: #000;
+    border-radius: 10px;
+}
+
+p{
+    font-size: 15px;
+    text-align: justify;
+    padding: 10px 0;
+}
+
+label{
+    font-size: 15px;
+}
+
+footer{
+    position: fixed;
+    bottom: 0; left: 0; right: 0;
+    background: #1A243A;
+    height: 45px;
+    color: #fff;
+    padding: 10px;
+}
+
+i{
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+img:hover{
+    transform: scale(1.01);
+    cursor: pointer;
+}
+
+.col{
+    width: 50%;
+}
+
+.w-20{
+    width: 20%;
+}
+
+.w-80{
+    width: 80%;
+}
+
+.w-100{
+    width: 100%;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.block{
+    display: block;
+}
+
+.mt-7{
+    margin-top: 7px;
+}
+
+.f-17{
+    font-size: 17px;
+}
+
+.pd-16{
+    padding: 16px;
+}
+
+.br-10{
+    border-radius: 10px;
+}
+
+.br{
+    border-right: 1px solid #fff;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-white{
+    color: #fff;
+}
+
+/* ============================== HOME =============================== */
+
+#home{
+    margin-bottom: 50px;
+}
+
+.input{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5px;
+}
+
+.form-group input{
+    background: #F8F8F8;
+}
+
+.form-group input:focus{
+    border: 1px solid #000;
+}
+
+.bg-img{
+    position: relative;
+    background-image: url("./img/x-ray.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+
+.bg-img>.text{
+    position: absolute;
+    top: 100px;
+    left: 60%;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 10px;
+}
+
+
+.bg-img h1{
+    font-size: 35px;
+}
+
+.form{
+    margin: 10px auto 0 auto;
+    max-width: 900px;
+    background: #fff;
+}
+
+.form-group{
+    padding: 10px;
+}
+
+.check{
+    text-align: center;
+}
+
+.upload{
+    background: crimson;
+    color: #fff;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.upload-image{
+    margin-top: 10px;
+}
+
+.bill{
+    display: none;
+    /* display: block; */
+    color: #000;
+    border: 3px solid #000;
+}
+
+.bill.open{
+    display: block;
+}
+
+.bill header button{
+    width: 50px;
+    background: #ccc;
+    color: #000;
+    padding: 16px;
+    margin: 0 10px;
+}
+
+.image{
+    text-align: center;
+}
+
+.author{
+    float: right;
+}
+
+.right{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.right>i:hover{
+    cursor: pointer;
+    transform: scale(2);
+}
+
+#nav{
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    height: 39px;
+    z-index: 9999;
+    background: rgba(255, 255, 255, 0.7);
+}
+
+#response{
+    /* background: #1A243A; */
+    /* position: relative; */
+    background: #F1F1F1;
+    margin: 10px auto 100px auto;
+    padding: 16px;
+    max-width: 900px;
+}
+
+#response .advice{
+    padding: 0 10px;
+}
+
+#response .sign{
+    float: right;
+    padding: 10px;
+}
+
+#response .sign img{
+    width: 100px;
+}
+
+#response main .header{
+    padding: 0 10px;
+}
+/* ============================== ABOUT =============================== */
+
+.about{
+    flex-wrap: wrap;
+    margin: 10px 16px 0 16px;
+}
+
+
+.about a{
+    text-align: center;
+    line-height: 80px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.about .card-item{
+    background: #000;
+    height: 100px;
+    max-width: 200px;
+    width: 20%;
+    margin: 16px;
+}
+
+.about .card-item a:hover{
+    background: #000;
+    transform: scale(1.2);
+}
+
+/* ============================== INFORMATION =============================== */
+
+#information{
+    background: #fff;
+}
+
+#information img{
+    max-width: 600px;
+}
+
+#information li{
+    list-style: decimal;
+    font-size: 15px;
+    margin-top: 9px;
+}
+
+
+[data-tab-content]{
+    display: none;
+}
+
+.active[data-tab-content]{
+    display: block;
+    animation: modalFadeIn ease 0.5s;
+}
+
+@keyframes modalFadeIn {
+    from{
+        opacity: 0.5;
+        ransform: translateY(-100px);
+        }
+
+    to{
+    transform: translateY(0);
+     
+    }
+}
